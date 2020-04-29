@@ -1,4 +1,4 @@
-const secretKey = 'mario'
+const secretKey = 'felipe'
 let characterSequence = []
 let timeCode
 
