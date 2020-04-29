@@ -1,0 +1,38 @@
+@font-face{
+  font-family: game;
+  src: url('./font/Games.ttf');
+}
+* {
+  font-family: game;
+  text-align: center;
+}
+
+body, html {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+span {
+  color: #ff9966;
+}
+
+#winScreen {
+  background-image: url('https://media.giphy.com/media/26uflTE3n9Tom1ipi/giphy.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: opacty .5s ease-in-out;
+}
+
+#winScreen[data-status="active"] {
+  opacity: 1;
+}
